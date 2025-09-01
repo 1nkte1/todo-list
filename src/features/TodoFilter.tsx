@@ -9,6 +9,7 @@ function TodoFilter() {
 
     return (
         <div className="todo-filter">
+            <div className="todo-filter__wrapper">
             {filters.map((f, index) =>
                 <button className={"todo-filter__category" +
                     (filter === f ? " todo-filter__category_active" : "")}
@@ -18,6 +19,7 @@ function TodoFilter() {
                     <p>{f}</p>
                 </button>
             )}
+            </div>
         </div>
     )
 }

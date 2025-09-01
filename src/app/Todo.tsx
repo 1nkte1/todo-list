@@ -1,8 +1,8 @@
 import React from 'react';
-import TodoFilter from './features/TodoFilter';
-import TodoInput from './features/TodoInput';
-import TodoList from './features/TodoList';
-import {useClear, useCountActive} from "./store/selectors";
+import TodoFilter from '../features/TodoFilter';
+import TodoInput from '../features/TodoInput';
+import TodoList from '../features/TodoList';
+import {useClear, useCountActive} from "../store/selectors";
 
 function Todo() {
     const clear = useClear();
@@ -16,17 +16,17 @@ function Todo() {
                   <button className="todo__clear"
                           type="button"
                           onClick={clear}>
-                      clear completed
+                      clear <br/> completed
                   </button>
               </div>
 
               <p className="todo__counter">{`tasks remaining: ${activeCount}`}</p>
 
+              <TodoInput/>
               <div className="todo__body">
                   <TodoFilter/>
 
                   <div className="todo__list">
-                      <TodoInput/>
                       <TodoList/>
                   </div>
               </div>

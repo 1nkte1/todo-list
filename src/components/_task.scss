@@ -1,6 +1,17 @@
 .task {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
   width: 30ch;
+  word-break: break-word;
   cursor: pointer;
+
+  //input {
+  //  flex: 0 0 auto;
+  //  width: 1rem;
+  //  height: 1rem;
+  //}
+  //p {
+  //  margin: 0;
+  //}
 }

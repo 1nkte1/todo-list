@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/styles.sass';
-import Todo from './Todo';
+import Todo from './app/Todo';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

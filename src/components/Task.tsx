@@ -6,14 +6,13 @@ function Task({id, text, completed}: Todo) {
     const handleToggle = () => toggle(id);
 
     return (
-        <div className="task"
-             onClick={handleToggle}>
-
+        <label className="task">
             <input type="checkbox"
-                   checked={completed}/>
-            <p {...completed && {style: {textDecoration: 'line-through'}}}>{text}</p>
+                   checked={completed}
+                   onChange={handleToggle}/>
+            <p style={completed ? {textDecoration: "line-through"} : undefined}>{text}</p>
 
-        </div>
+        </label>
     )
 }
 
