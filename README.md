@@ -1,6 +1,8 @@
 # my todo list
 небольшое приложение для управления списком задач на React + Typescript + Zustand  
-тестирование выполнено с помощью React Testing Library + Jest
+тестирование выполнено с помощью React Testing Library + Jest  
+  
+[проект на vercel](https://inktels-todo-list.vercel.app)
 
 ---
 
