@@ -1,0 +1,22 @@
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    border: none;
+    width: 30ch;
+    border-bottom: 1px solid #000;
+  }
+
+  &__submit {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    background-color: #79D7BE;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #4DA1A9;
+    }
+  }
+}

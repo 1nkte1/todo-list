@@ -1,0 +1,46 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", Courier New, Courier, monospace;
+  font-size: $font-base;
+  line-height: 1.5;
+  color: #000;
+  background-color: #F6F4F0;
+}
+
+h1 {
+  font-size: $font-xl;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input, button, p, ul, li {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
